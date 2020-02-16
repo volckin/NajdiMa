@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "855062009917",
+    "firebase_url": "https://najdima-ad2be.firebaseio.com",
+    "project_id": "najdima-ad2be",
+    "storage_bucket": "najdima-ad2be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855062009917:android:32cc056f89417d4a23f254",
+        "android_client_info": {
+          "package_name": "com.example.najdima"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855062009917-1qiuqs5d5mq0gmrdjhjr0fpt8ruclj8q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.najdima",
+            "certificate_hash": "a8719400bc9d0bc899e105803fc5e036f06d510b"
+          }
+        },
+        {
+          "client_id": "855062009917-hcb3t03u73opfhopisl6mm5uj0do9io8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVoPKR04CuheBS1dNrgxAlhRKc8gd-ZKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855062009917-hcb3t03u73opfhopisl6mm5uj0do9io8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,6 +1,34 @@
 <resources>
-    <string name="app_name">NajdiMa</string>
+    <string name="app_name">Najdi Ma</string>
     <string name="logo_descriptions">Logo Najdi Ma</string>
+
+    <!-- welcome activity -->
     <string name="btn_sign_in">Prihlásiť sa</string>
     <string name="btn_sign_up">Registrovať sa</string>
+    <string name="author">powered by VolckinDesign</string>
+
+    <!-- sign in activity -->
+    <string name="user_name">Prihlasovacie meno</string>
+    <string name="password">Heslo</string>
+    <string name="wrongUsername">Prihlasovacie meno neexistuje.</string>
+    <string name="wrongPassword">Heslo je nesprávne.</string>
+    <string name="usernamePasswordEmpty">Prihlasovacie meno a heslo je prázdne!</string>
+    <string name="usernameEmpty">Prihlasovacie meno je prázdne!</string>
+    <string name="passwordEmpty">Heslo je prázdne!</string>
+    <string name="usernamePasswordChars">Prihlasovacie meno a hesluo musia mať minimálne 5 znakov!</string>
+    <string name="usernameChars">Prihlasovacie meno musí mať minimálne 5 znakov!</string>
+    <string name="passwordChars">Heslo musí mať minimálne 5 znakov!</string>
+
+    <!-- close app -->
+    <string name="exitDialogTitle">Ste si istý/á, že chcete zavrieť aplikáciu?</string>
+    <string name="positive">Áno</string>
+    <string name="negative">Nie</string>
+
+    <!-- home activity -->
+    <string name="quote">Keby sa človek stratil psovi,
+        tak by ho pes nikdy neprestal hľadať.</string>
+    <string name="btn_i_found">Našiel som</string>
+    <string name="btn_i_lost">Stratil som</string>
+
+
 </resources>

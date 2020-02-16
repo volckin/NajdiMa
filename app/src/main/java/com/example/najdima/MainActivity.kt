@@ -12,11 +12,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val i = Intent(this, LoginActivity::class.java)
+        val i = Intent(this, WelcomeActivity::class.java)
         Handler().postDelayed({
             startActivity(i)
             finish()
         }, 1500)
 
+    }
+
+    override fun onBackPressed() {
+            println("Attempt to close app!!!")
     }
 }

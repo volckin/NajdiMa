@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3AB54A</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimaryDark">#8CC63E</color>
     <color name="colorAccent">#D81B60</color>
+
+    <!-- edit text color -->
+    <color name="et_color">#898989</color>
+
+    <!-- green gradient -->
     <color name="gradientStartColor">#3AB54A</color>
     <color name="gradientCenterColor">#8CC63E</color>
     <color name="gradientEndColor">#D6DF22</color>
+
+    <!-- red gradient -->
+    <color name="gradientRStartColor">#EF3E36</color>
+    <color name="gradientRCenterColor">#F15928</color>
+    <color name="gradientREndColor">#F8931D</color>
+
+
 </resources>
