@@ -12,11 +12,16 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.fragment.app.FragmentActivity
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.FirebaseFirestore
 
 
 class SignInActivity : AppCompatActivity() {
+
+    private var mAuth: FirebaseAuth? = null
+    private var username : String? = null
+    private var password : String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,9 +31,6 @@ class SignInActivity : AppCompatActivity() {
         val btnSignIn : Button = findViewById(R.id.btn_sign_in)
         val et_username : EditText = findViewById(R.id.et_username)
         val et_password : EditText = findViewById(R.id.et_password)
-
-        var username : String? = null
-        var password : String? = null
 
         val drawableUsernameEmpty : Drawable? = getDrawable(R.drawable.ic_username_empty)
         val drawablePasswordEmpty : Drawable? = getDrawable(R.drawable.ic_password_empty)
@@ -108,28 +110,34 @@ class SignInActivity : AppCompatActivity() {
                 password = et_password.text.toString()
                 println("PASSWORD: " + password)
 
-                db.collection("users").document()
-                    .get()
-                    .addOnCompleteListener { task ->
+                mAuth?.signInWithEmailAndPassword(username.toString(), password.toString())
+                    ?.addOnCompleteListener(this) { task ->
                         if (task.isSuccessful) {
-                            for (document in task.result!!) {
-                                //Log.d(FragmentActivity.TAG, document.id + " => " + document.data)
-                                if (document.getString("username") != username){
-                                    wrongField(et_username, drawableUsernameEmpty)
-                                    makeToast(R.string.wrongUsername)
-                                } else if (document.getString("password") != password) {
-                                    wrongField(et_password, drawablePasswordEmpty)
-                                    makeToast(R.string.wrongPassword)
-                                }
-                            }
+                            // Sign in success, update UI with the signed-in user's information
+                            Log.d("loginSuccess", "signInWithEmail:success")
+                            val user = mAuth?.currentUser
+                            logIn(user)
                         } else {
-                            //Log.w(FragmentActivity.TAG, "Error getting documents.", task.exception)
+                            // If sign in fails, display a message to the user.
+                            Log.w("loginFail", "signInWithEmail:failure", task.exception)
+                            Toast.makeText(baseContext, "Authentication failed.",
+                                Toast.LENGTH_SHORT).show()
+                            //updateUI(null)
                         }
+
+                        // ...
                     }
             }
 
         }
 
+    }
+
+    private fun logIn(user: FirebaseUser?) {
+        val i = Intent(this, HomeActivity::class.java)
+        i.putExtra("username", username)
+        startActivity(i)
+        finish()
     }
 
     private fun makeToast(txt: Int) {
