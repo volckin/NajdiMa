@@ -22,6 +22,7 @@
     <string name="usernamePasswordChars">Prihlasovacie meno a hesluo musia mať minimálne 5 znakov!</string>
     <string name="usernameChars">Prihlasovacie meno musí mať minimálne 5 znakov!</string>
     <string name="passwordChars">Heslo musí mať minimálne 5 znakov!</string>
+    <string name="noEqualsPasswords">Heslá sa nezhodujú!</string>
 
     <!-- close app -->
     <string name="exitDialogTitle">Ste si istý/á, že chcete zavrieť aplikáciu?</string>
