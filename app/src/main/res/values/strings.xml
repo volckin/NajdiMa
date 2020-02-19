@@ -7,9 +7,13 @@
     <string name="btn_sign_up">Registrovať sa</string>
     <string name="author">powered by VolckinDesign</string>
 
-    <!-- sign in activity -->
-    <string name="user_name">Prihlasovacie meno</string>
+    <!-- sign in/sign up activity -->
+    <string name="email">Prihlasovací email</string>
+    <string name="user_name">Použivateľské meno</string>
     <string name="password">Heslo</string>
+    <string name="repeat_password">Opakuj heslo</string>
+    <string name="phone">Telefónne číslo</string>
+    <string name="conditions">Prečítal som si zásady ochrany súkromia a súhlaism s nimi</string>
     <string name="wrongUsername">Prihlasovacie meno neexistuje.</string>
     <string name="wrongPassword">Heslo je nesprávne.</string>
     <string name="usernamePasswordEmpty">Prihlasovacie meno a heslo je prázdne!</string>

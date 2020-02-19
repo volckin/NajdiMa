@@ -29,7 +29,7 @@ class SignInActivity : AppCompatActivity() {
 
         val db = FirebaseFirestore.getInstance()
         val btnSignIn : Button = findViewById(R.id.btn_sign_in)
-        val et_username : EditText = findViewById(R.id.et_username)
+        val et_username : EditText = findViewById(R.id.et_email)
         val et_password : EditText = findViewById(R.id.et_password)
 
         val drawableUsernameEmpty : Drawable? = getDrawable(R.drawable.ic_username_empty)
