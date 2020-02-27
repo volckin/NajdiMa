@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Najdi Ma</string>
+    <string name="logo_descriptions">Logo Najdi Ma</string>
+
+    <!-- welcome activity -->
+    <string name="btn_sign_in">Sign in</string>
+    <string name="btn_sign_up">Sign up</string>
+    <string name="author">powered by VolckinDesign</string>
+
+    <!-- sign in/sign up activity -->
+    <string name="email">Registration email</string>
+    <string name="user_name">Username</string>
+    <string name="password">Password</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="phone">Phone number</string>
+    <string name="conditions">I have read and accepted the privacy policy</string>
+    <string name="wrongUsername">Username does not exist.</string>
+    <string name="wrongPassword">Wrong password</string>
+    <string name="usernamePasswordEmpty">Login and password are empty!</string>
+    <string name="usernameEmpty">Username is empty!</string>
+    <string name="passwordEmpty">Password is empty!</string>
+    <string name="usernamePasswordChars">username and password must be at least 5 characters long!</string>
+    <string name="usernameChars">Username must be at least 5 characters long!</string>
+    <string name="passwordChars">Password must be at least 5 characters long!</string>
+    <string name="noEqualsPasswords">Passwords do not match!</string>
+    <string name="emptyFields">Some fields are not filled</string>
+
+    <!-- close app -->
+    <string name="exitDialogTitle">Are you sure you want to close the app?</string>
+    <string name="positive">Yes</string>
+    <string name="negative">No</string>
+
+    <!-- home activity -->
+    <string name="quote">If a man was lost to a dog,\nthe dog would never stop looking for him.</string>
+    <string name="btn_i_found">I found pet</string>
+    <string name="btn_i_lost">I lost pet</string>
+</resources>

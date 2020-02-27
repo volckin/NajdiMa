@@ -5,35 +5,35 @@ import android.widget.EditText
 import java.io.Serializable
 
 class RegistrationForm(
-    private val et_username : EditText,
-    private val et_email : EditText,
-    private val et_password : EditText,
-    private val et_repeat_password : EditText,
-    private val et_phone : EditText,
-    private val chb_conditions : CheckBox
+    private val etUsername : EditText,
+    private val etEmail : EditText,
+    private val etPassword : EditText,
+    private val etRepeatPassword : EditText,
+    private val etPhone : EditText,
+    private val chbConditions : CheckBox
 ) : Serializable{
 
     fun getET_username() : EditText {
-        return this.et_username
+        return this.etUsername
     }
 
     fun getET_email() : EditText {
-        return this.et_email
+        return this.etEmail
     }
 
     fun getET_password() : EditText {
-        return this.et_password
+        return this.etPassword
     }
 
     fun getET_repeat_password() : EditText {
-        return this.et_repeat_password
+        return this.etRepeatPassword
     }
 
     fun getET_phone() : EditText {
-        return this.et_phone
+        return this.etPhone
     }
 
     fun getET_conditions() : CheckBox {
-        return this.chb_conditions
+        return this.chbConditions
     }
 }

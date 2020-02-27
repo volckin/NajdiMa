@@ -23,6 +23,7 @@
     <string name="usernameChars">Prihlasovacie meno musí mať minimálne 5 znakov!</string>
     <string name="passwordChars">Heslo musí mať minimálne 5 znakov!</string>
     <string name="noEqualsPasswords">Heslá sa nezhodujú!</string>
+    <string name="emptyFields">Niektoré polia nie sú vyplnené</string>
 
     <!-- close app -->
     <string name="exitDialogTitle">Ste si istý/á, že chcete zavrieť aplikáciu?</string>
@@ -30,10 +31,11 @@
     <string name="negative">Nie</string>
 
     <!-- home activity -->
-    <string name="quote">Keby sa človek stratil psovi,
+    <string name="quote" translatable="true">Keby sa človek stratil psovi,\n
         tak by ho pes nikdy neprestal hľadať.</string>
     <string name="btn_i_found">Našiel som</string>
     <string name="btn_i_lost">Stratil som</string>
+
 
 
 </resources>

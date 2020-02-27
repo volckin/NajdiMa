@@ -19,14 +19,14 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
-        val et_username : EditText = findViewById(R.id.et_username)
-        val et_email : EditText = findViewById(R.id.et_email)
-        val et_password : EditText = findViewById(R.id.et_password)
-        val et_repeat_password : EditText = findViewById(R.id.et_repeat_password)
-        val et_phone : EditText = findViewById(R.id.et_phone)
-        val chb_conditions : CheckBox = findViewById(R.id.chb_conditions)
-        val btn_sign_up : Button = findViewById(R.id.btn_sign_up)
-        var form : RegistrationForm? = null
+        val etUsername : EditText = findViewById(R.id.et_username)
+        val etEmail : EditText = findViewById(R.id.et_email)
+        val etPassword : EditText = findViewById(R.id.et_password)
+        val etRepeatPassword : EditText = findViewById(R.id.et_repeat_password)
+        val etPhone : EditText = findViewById(R.id.et_phone)
+        val chbConditions : CheckBox = findViewById(R.id.chb_conditions)
+        val btnSignUp : Button = findViewById(R.id.btn_sign_up)
+        var form : RegistrationForm?
 
         val drawableEmailEmpty : Drawable? = getDrawable(R.drawable.ic_email_empty)
         val drawableUsernameEmpty : Drawable? = getDrawable(R.drawable.ic_username_empty)
@@ -37,8 +37,8 @@ class SignUpActivity : AppCompatActivity() {
 
 
         //clickListener on btnSignIn
-        btn_sign_up.setOnClickListener {
-            form = RegistrationForm(et_username, et_email, et_password, et_repeat_password, et_phone, chb_conditions)
+        btnSignUp.setOnClickListener {
+            form = RegistrationForm(etUsername, etEmail, etPassword, etRepeatPassword, etPhone, chbConditions)
             RegistrationValidation.checkRegistrationFields(form, applicationContext)
         }
 
