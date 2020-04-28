@@ -35,4 +35,12 @@
     <string name="quote">If a man was lost to a dog,\nthe dog would never stop looking for him.</string>
     <string name="btn_i_found">I found pet</string>
     <string name="btn_i_lost">I lost pet</string>
+
+    <string name="title_activity_home">Home</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_i_found">I Found</string>
+    <string name="menu_i_lost">I Lost</string>
+    <string name="menu_found">Pets Found</string>
+    <string name="menu_lost">Lost pets</string>
 </resources>
