@@ -1,4 +1,4 @@
-package com.example.najdima
+package com.example.najdima.nextversionsactivities
 
 import android.content.Context
 import android.content.res.ColorStateList
@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.content.res.AppCompatResources.getDrawable
 import androidx.core.content.ContextCompat
+import com.example.najdima.R
 
 object RegistrationValidation {
 
@@ -32,45 +33,111 @@ object RegistrationValidation {
 
 
         if (username.length < 5)
-            emptyField(etUsername, Field.Username, applicationContext)
+            emptyField(
+                etUsername,
+                Field.Username,
+                applicationContext
+            )
         else
-            filledField(etUsername, Field.Username, applicationContext)
+            filledField(
+                etUsername,
+                Field.Username,
+                applicationContext
+            )
 
-        if (!isEmailValid(email))
-            emptyField(etEmail, Field.Email, applicationContext)
+        if (!isEmailValid(
+                email
+            )
+        )
+            emptyField(
+                etEmail,
+                Field.Email,
+                applicationContext
+            )
         else
-            filledField(etEmail, Field.Email, applicationContext)
+            filledField(
+                etEmail,
+                Field.Email,
+                applicationContext
+            )
 
         if (password.length < 5) {
-            emptyField(etPassword, Field.Password, applicationContext)
-            emptyField(etRepeatPassword, Field.Password, applicationContext)
+            emptyField(
+                etPassword,
+                Field.Password,
+                applicationContext
+            )
+            emptyField(
+                etRepeatPassword,
+                Field.Password,
+                applicationContext
+            )
         } else if (password != repeatPassword) {
-            emptyField(etPassword, Field.Password, applicationContext)
-            emptyField(etRepeatPassword, Field.Password, applicationContext)
-            makeToast(applicationContext, R.string.noEqualsPasswords)
+            emptyField(
+                etPassword,
+                Field.Password,
+                applicationContext
+            )
+            emptyField(
+                etRepeatPassword,
+                Field.Password,
+                applicationContext
+            )
+            makeToast(
+                applicationContext,
+                R.string.noEqualsPasswords
+            )
         } else {
-            filledField(etPassword, Field.Password, applicationContext)
-            filledField(etRepeatPassword, Field.Password, applicationContext)
+            filledField(
+                etPassword,
+                Field.Password,
+                applicationContext
+            )
+            filledField(
+                etRepeatPassword,
+                Field.Password,
+                applicationContext
+            )
         }
 
-        if (!phone.isEmpty() && !validPhoneNumber(phone))
-            emptyField(etPhone, Field.PhoneNumber, applicationContext)
+        if (!phone.isEmpty() && !validPhoneNumber(
+                phone
+            )
+        )
+            emptyField(
+                etPhone,
+                Field.PhoneNumber,
+                applicationContext
+            )
         else
-            filledField(etPhone, Field.PhoneNumber, applicationContext)
+            filledField(
+                etPhone,
+                Field.PhoneNumber,
+                applicationContext
+            )
 
 
     }
 
     private fun filledField(editText: EditText?, type: Field, applicationContext: Context) {
 
-        val drawableUsername : Drawable? = getDrawable(applicationContext, R.drawable.ic_username)
-        val drawableEmail : Drawable? = getDrawable(applicationContext, R.drawable.ic_email)
-        val drawablePassword : Drawable? = getDrawable(applicationContext, R.drawable.ic_password)
-        val drawableRequired : Drawable? = getDrawable(applicationContext, R.drawable.ic_required)
+        val drawableUsername : Drawable? = getDrawable(applicationContext,
+            R.drawable.ic_username
+        )
+        val drawableEmail : Drawable? = getDrawable(applicationContext,
+            R.drawable.ic_email
+        )
+        val drawablePassword : Drawable? = getDrawable(applicationContext,
+            R.drawable.ic_password
+        )
+        val drawableRequired : Drawable? = getDrawable(applicationContext,
+            R.drawable.ic_required
+        )
 
         editText?.setBackgroundTintList( ColorStateList.valueOf(
             ContextCompat.getColor(applicationContext,
-                R.color.gradientCenterColor)))
+                R.color.gradientCenterColor
+            )))
 
         when(type){
             Field.Username -> editText?.setCompoundDrawablesWithIntrinsicBounds(drawableUsername, null, drawableRequired, null)
@@ -91,15 +158,26 @@ object RegistrationValidation {
         type: Field,
         applicationContext: Context
     ) {
-        val drawableEmailEmpty : Drawable? = getDrawable(applicationContext, R.drawable.ic_email_empty)
-        val drawableUsernameEmpty : Drawable? = getDrawable(applicationContext, R.drawable.ic_username_empty)
-        val drawablePasswordEmpty : Drawable? = getDrawable(applicationContext, R.drawable.ic_password_empty)
-        val drawablePhoneEmpty : Drawable? = getDrawable(applicationContext, R.drawable.ic_phone_number_empty)
-        val drawableRequiredEmpty : Drawable? = getDrawable(applicationContext, R.drawable.ic_required_empty)
+        val drawableEmailEmpty : Drawable? = getDrawable(applicationContext,
+            R.drawable.ic_email_empty
+        )
+        val drawableUsernameEmpty : Drawable? = getDrawable(applicationContext,
+            R.drawable.ic_username_empty
+        )
+        val drawablePasswordEmpty : Drawable? = getDrawable(applicationContext,
+            R.drawable.ic_password_empty
+        )
+        val drawablePhoneEmpty : Drawable? = getDrawable(applicationContext,
+            R.drawable.ic_phone_number_empty
+        )
+        val drawableRequiredEmpty : Drawable? = getDrawable(applicationContext,
+            R.drawable.ic_required_empty
+        )
 
         editText?.setBackgroundTintList( ColorStateList.valueOf(
             ContextCompat.getColor(applicationContext,
-                R.color.gradientRStartColor)))
+                R.color.gradientRStartColor
+            )))
 
         when(type){
             Field.Username -> editText?.setCompoundDrawablesWithIntrinsicBounds(drawableUsernameEmpty, null, drawableRequiredEmpty, null)
@@ -113,7 +191,10 @@ object RegistrationValidation {
             }
             Field.PhoneNumber -> editText?.setCompoundDrawablesWithIntrinsicBounds(drawablePhoneEmpty, null, null, null)
         }
-        makeToast(applicationContext, R.string.emptyFields)
+        makeToast(
+            applicationContext,
+            R.string.emptyFields
+        )
 
 
     }

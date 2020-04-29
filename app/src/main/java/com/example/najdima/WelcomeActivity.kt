@@ -1,15 +1,13 @@
 package com.example.najdima
 
-import android.R.*
-import android.app.PendingIntent.getActivity
-import android.content.DialogInterface
 import android.content.Intent
-import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.example.najdima.nextversionsactivities.SignInActivity
+import com.example.najdima.nextversionsactivities.SignUpActivity
 
 
 class WelcomeActivity : AppCompatActivity() {

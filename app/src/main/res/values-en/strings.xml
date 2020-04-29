@@ -32,7 +32,7 @@
     <string name="negative">No</string>
 
     <!-- home activity -->
-    <string name="quote">If a man was lost to a dog,\nthe dog would never stop looking for him.</string>
+    <string name="quote">If a person got lost to a dog, \nthe dog would never stop looking for him.</string>
     <string name="btn_i_found">I found pet</string>
     <string name="btn_i_lost">I lost pet</string>
 

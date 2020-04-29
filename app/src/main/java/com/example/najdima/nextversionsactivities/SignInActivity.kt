@@ -1,4 +1,4 @@
-package com.example.najdima
+package com.example.najdima.nextversionsactivities
 
 import android.content.Intent
 import android.content.res.ColorStateList
@@ -12,6 +12,9 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.example.najdima.HomeActivity
+import com.example.najdima.R
+import com.example.najdima.WelcomeActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.FirebaseFirestore
@@ -50,10 +53,12 @@ class SignInActivity : AppCompatActivity() {
                                        before: Int, count: Int) {
                 if (et_username.backgroundTintList == ColorStateList.valueOf(
                         ContextCompat.getColor(applicationContext,
-                            R.color.gradientRStartColor))){
+                            R.color.gradientRStartColor
+                        ))){
                     et_username.setBackgroundTintList( ColorStateList.valueOf(
                         ContextCompat.getColor(applicationContext,
-                            R.color.gradientCenterColor)))
+                            R.color.gradientCenterColor
+                        )))
                     et_username.setCompoundDrawablesWithIntrinsicBounds(drawableUsername, null, null, null)
                 }
             }
@@ -72,10 +77,12 @@ class SignInActivity : AppCompatActivity() {
                                        before: Int, count: Int) {
                 if (et_password.backgroundTintList == ColorStateList.valueOf(
                         ContextCompat.getColor(applicationContext,
-                            R.color.gradientRStartColor))){
+                            R.color.gradientRStartColor
+                        ))){
                     et_password.setBackgroundTintList( ColorStateList.valueOf(
                         ContextCompat.getColor(applicationContext,
-                            R.color.gradientCenterColor)))
+                            R.color.gradientCenterColor
+                        )))
                     et_password.setCompoundDrawablesWithIntrinsicBounds(drawablePassword, null, null, null)
                 }
             }
@@ -149,7 +156,8 @@ class SignInActivity : AppCompatActivity() {
     private fun wrongField(txt: EditText, img: Drawable?) {
         txt.setBackgroundTintList( ColorStateList.valueOf(
             ContextCompat.getColor(applicationContext,
-                R.color.gradientRStartColor)))
+                R.color.gradientRStartColor
+            )))
         txt.setCompoundDrawablesWithIntrinsicBounds(img, null, null, null)
     }
 
@@ -162,11 +170,13 @@ class SignInActivity : AppCompatActivity() {
     ) {
         etUsername.setBackgroundTintList( ColorStateList.valueOf(
             ContextCompat.getColor(applicationContext,
-                R.color.gradientRStartColor)))
+                R.color.gradientRStartColor
+            )))
         etUsername.setCompoundDrawablesWithIntrinsicBounds(drawableUsernameEmpty, null, null, null)
         etPassword.setBackgroundTintList( ColorStateList.valueOf(
             ContextCompat.getColor(applicationContext,
-                R.color.gradientRStartColor)))
+                R.color.gradientRStartColor
+            )))
         etPassword.setCompoundDrawablesWithIntrinsicBounds(drawablePasswordEmpty, null, null, null)
     }
 

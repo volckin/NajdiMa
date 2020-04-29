@@ -1,4 +1,4 @@
-package com.example.najdima
+package com.example.najdima.nextversionsactivities
 
 import android.content.Intent
 import android.graphics.drawable.Drawable
@@ -7,6 +7,8 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import com.example.najdima.R
+import com.example.najdima.WelcomeActivity
 import com.google.firebase.auth.FirebaseAuth
 
 
@@ -38,8 +40,18 @@ class SignUpActivity : AppCompatActivity() {
 
         //clickListener on btnSignIn
         btnSignUp.setOnClickListener {
-            form = RegistrationForm(etUsername, etEmail, etPassword, etRepeatPassword, etPhone, chbConditions)
-            RegistrationValidation.checkRegistrationFields(form, applicationContext)
+            form = RegistrationForm(
+                etUsername,
+                etEmail,
+                etPassword,
+                etRepeatPassword,
+                etPhone,
+                chbConditions
+            )
+            RegistrationValidation.checkRegistrationFields(
+                form,
+                applicationContext
+            )
         }
 
     }

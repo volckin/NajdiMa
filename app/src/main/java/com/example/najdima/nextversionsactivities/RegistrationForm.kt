@@ -1,4 +1,4 @@
-package com.example.najdima
+package com.example.najdima.nextversionsactivities
 
 import android.widget.CheckBox
 import android.widget.EditText
