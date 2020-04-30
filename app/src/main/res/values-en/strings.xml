@@ -22,6 +22,7 @@
     <string name="title_activity_home">Home</string>
 
     <!-- i found activity -->
+    <string name="name">Name</string>
     <string name="animalSpecies">Animal species</string>
     <string name="breed">Breed</string>
     <string name="size">Size</string>

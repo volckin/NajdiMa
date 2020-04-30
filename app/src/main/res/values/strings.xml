@@ -22,6 +22,7 @@
     <string name="title_activity_home">DOMOV</string>
 
     <!-- i found activity -->
+    <string name="name">Meno</string>
     <string name="animalSpecies">Druh</string>
     <string name="breed">Plemeno</string>
     <string name="size">Veľkosť</string>

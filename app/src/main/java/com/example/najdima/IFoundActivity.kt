@@ -14,7 +14,9 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.example.najdima.nextversionsactivities.Pet
 import com.google.android.material.navigation.NavigationView
+import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_i_found.*
 
 class IFoundActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -89,6 +91,34 @@ class IFoundActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
                 pickImageFromGallery();
             }
         }
+
+        val txtAnimalSpecies: EditText = findViewById(R.id.et_animalSpecies)
+        val txtBreed: EditText = findViewById(R.id.et_breed)
+        val txtSize: AutoCompleteTextView = findViewById(R.id.at_size)
+        val txtSex: AutoCompleteTextView = findViewById(R.id.at_sex)
+        val txtCity: EditText = findViewById(R.id.et_city)
+        val txtMoreDetails: EditText = findViewById(R.id.et_info)
+
+        val btn_ok: ImageButton = findViewById(R.id.btn_ok)
+        btn_ok.setOnClickListener {
+            val animalSpecies = txtAnimalSpecies.text.toString()
+            val breed = txtBreed.text.toString()
+            val size = txtSize.text.toString()
+            val sex = txtSex.text.toString()
+            val city = txtCity.text.toString()
+            val moreDetails = txtMoreDetails.text.toString()
+            val pet = Pet(
+                animalSpecies = animalSpecies,
+                breed = breed,
+                size = size,
+                sex = sex,
+                city = city,
+                moreDetails = moreDetails
+            )
+            val firebaseDatabase = FirebaseDatabase.getInstance()
+            val databaseReference = firebaseDatabase.reference
+            databaseReference.child("pet").push().setValue(pet)
+        }
     }
 
     private fun pickImageFromGallery() {
@@ -109,7 +139,7 @@ class IFoundActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         when(requestCode){
             PERMISSION_CODE -> {
-                if (grantResults.size >0 && grantResults[0] ==
+                if (grantResults.size > 0 && grantResults[0] ==
                     PackageManager.PERMISSION_GRANTED){
                     //permission from popup granted
                     pickImageFromGallery()
