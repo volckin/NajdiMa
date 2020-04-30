@@ -2,6 +2,39 @@
     <string name="app_name">Najdi Ma</string>
     <string name="logo_descriptions">Logo Najdi Ma</string>
 
+    <!-- close app -->
+    <string name="exitDialogTitle">Ste si istý/á, že chcete zavrieť aplikáciu?</string>
+    <string name="positive">Áno</string>
+    <string name="negative">Nie</string>
+
+    <!-- menu -->
+    <string name="menu_home">DOMOV</string>
+    <string name="menu_i_found">NAŠIEL SOM</string>
+    <string name="menu_i_lost">STRATIL SOM</string>
+    <string name="menu_found">NÁJDENÉ ZVIERATKÁ</string>
+    <string name="menu_lost">STRATENÉ ZVIERATKÁ</string>
+
+    <!-- home activity -->
+    <string name="quote" translatable="true">Keby sa človek stratil psovi,\n
+        tak by ho pes nikdy neprestal hľadať.</string>
+    <string name="btn_i_found">NAŠIEL SOM</string>
+    <string name="btn_i_lost">STRATIL SOM</string>
+    <string name="title_activity_home">DOMOV</string>
+
+    <!-- i found activity -->
+    <string name="animalSpecies">Druh</string>
+    <string name="breed">Plemeno</string>
+    <string name="size">Veľkosť</string>
+    <string name="sex">Pohlavie</string>
+    <string name="city">Mesto</string>
+    <string name="phoneNumber">Telefónne číslo</string>
+    <string name="info">Ďalšie informácie</string>
+    <string name="size_small">malá</string>
+    <string name="size_middle">stredná</string>
+    <string name="size_big">veľká</string>
+    <string name="sex_female">samica</string>
+    <string name="sex_male">samec</string>
+
     <!-- welcome activity -->
     <string name="btn_sign_in">Prihlásiť sa</string>
     <string name="btn_sign_up">Registrovať sa</string>
@@ -25,34 +58,18 @@
     <string name="noEqualsPasswords">Heslá sa nezhodujú!</string>
     <string name="emptyFields">Niektoré polia nie sú vyplnené</string>
 
-    <!-- close app -->
-    <string name="exitDialogTitle">Ste si istý/á, že chcete zavrieť aplikáciu?</string>
-    <string name="positive">Áno</string>
-    <string name="negative">Nie</string>
-
-    <!-- home activity -->
-    <string name="quote" translatable="true">Keby sa človek stratil psovi,\n
-        tak by ho pes nikdy neprestal hľadať.</string>
-    <string name="btn_i_found">Našiel som</string>
-    <string name="btn_i_lost">Stratil som</string>
-    <string name="title_activity_home">Domov</string>
-
-    <string name="menu_home">Domov</string>
-    <string name="menu_i_found">Našiel som</string>
-    <string name="menu_i_lost">Stratil som</string>
-    <string name="menu_found">Nájdené zvieratka</string>
-    <string name="menu_lost">Stratené zvieratka</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="menu_gallery" translatable="false">Gallery</string>
+    <string name="menu_slideshow" translatable="false">Slideshow</string>
+    <string name="menu_tools" translatable="false">Tools</string>
+    <string name="menu_share" translatable="false">Share</string>
+    <string name="menu_send" translatable="false">Send</string>
+    <string name="_0_3" translatable="false">0/3</string>
 
 
 </resources>

@@ -6,11 +6,11 @@
         <item
                 android:id="@+id/nav_home"
                 android:icon="@drawable/ic_menu_home"
-                android:title="@string/menu_home" />
+                android:title="@string/menu_home"/>
         <item
                 android:id="@+id/nav_i_found"
                 android:icon="@drawable/ic_menu_i_found"
-                android:title="@string/menu_i_found" />
+                android:title="@string/menu_i_found"/>
         <item
                 android:id="@+id/nav_i_lost"
                 android:icon="@drawable/ic_menu_i_lost"
@@ -23,6 +23,5 @@
                 android:id="@+id/nav_lost"
                 android:icon="@drawable/ic_menu_lost"
                 android:title="@string/menu_lost" />
-
 
 </menu>

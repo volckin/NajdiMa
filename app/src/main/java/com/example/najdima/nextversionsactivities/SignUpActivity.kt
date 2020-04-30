@@ -8,7 +8,6 @@ import android.widget.CheckBox
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.example.najdima.R
-import com.example.najdima.WelcomeActivity
 import com.google.firebase.auth.FirebaseAuth
 
 

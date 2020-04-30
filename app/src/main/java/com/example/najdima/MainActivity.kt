@@ -1,4 +1,4 @@
-package com.example.najdima.nextversionsactivities
+package com.example.najdima
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,8 +6,6 @@ import android.os.Handler
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.najdima.HomeActivity
-import com.example.najdima.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 
@@ -40,11 +38,12 @@ class MainActivity : AppCompatActivity() {
                 // ...
             }
 
-        val i = Intent(this, HomeActivity::class.java)
+        val i = Intent(this, IFoundActivity::class.java)
+        i.putExtra("activityType", ActivityType.LOST)
         Handler().postDelayed({
             startActivity(i)
             finish()
-        }, 1500)
+        }, 1000)
 
     }
 

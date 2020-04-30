@@ -3,6 +3,38 @@
     <string name="app_name">Najdi Ma</string>
     <string name="logo_descriptions">Logo Najdi Ma</string>
 
+    <!-- close app -->
+    <string name="exitDialogTitle">Are you sure you want to close the app?</string>
+    <string name="positive">Yes</string>
+    <string name="negative">No</string>
+
+    <!-- menu -->
+    <string name="menu_home">HOME</string>
+    <string name="menu_i_found">I FOUND PET</string>
+    <string name="menu_i_lost">I LOST PET</string>
+    <string name="menu_found">FOUND PETS</string>
+    <string name="menu_lost">LOST PETS</string>
+
+    <!-- home activity -->
+    <string name="quote">If a person got lost to a dog, \nthe dog would never stop looking for him.</string>
+    <string name="btn_i_found">I found pet</string>
+    <string name="btn_i_lost">I lost pet</string>
+    <string name="title_activity_home">Home</string>
+
+    <!-- i found activity -->
+    <string name="animalSpecies">Animal species</string>
+    <string name="breed">Breed</string>
+    <string name="size">Size</string>
+    <string name="sex">Sex</string>
+    <string name="city">City</string>
+    <string name="phoneNumber">Phone number</string>
+    <string name="info">More details</string>
+    <string name="size_small">small</string>
+    <string name="size_middle">middle</string>
+    <string name="size_big">big</string>
+    <string name="sex_female">female</string>
+    <string name="sex_male">male</string>
+
     <!-- welcome activity -->
     <string name="btn_sign_in">Sign in</string>
     <string name="btn_sign_up">Sign up</string>
@@ -25,22 +57,4 @@
     <string name="passwordChars">Password must be at least 5 characters long!</string>
     <string name="noEqualsPasswords">Passwords do not match!</string>
     <string name="emptyFields">Some fields are not filled</string>
-
-    <!-- close app -->
-    <string name="exitDialogTitle">Are you sure you want to close the app?</string>
-    <string name="positive">Yes</string>
-    <string name="negative">No</string>
-
-    <!-- home activity -->
-    <string name="quote">If a person got lost to a dog, \nthe dog would never stop looking for him.</string>
-    <string name="btn_i_found">I found pet</string>
-    <string name="btn_i_lost">I lost pet</string>
-
-    <string name="title_activity_home">Home</string>
-
-    <string name="menu_home">Home</string>
-    <string name="menu_i_found">I Found</string>
-    <string name="menu_i_lost">I Lost</string>
-    <string name="menu_found">Pets Found</string>
-    <string name="menu_lost">Lost pets</string>
 </resources>
